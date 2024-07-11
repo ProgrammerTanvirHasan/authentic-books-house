@@ -10,6 +10,7 @@ const Books = () => {
    
 
    useEffect(()=>{
+    
     fetch('/src/blog.json')
     .then(res=>res.json())
     .then(data=>setBooks(data))
